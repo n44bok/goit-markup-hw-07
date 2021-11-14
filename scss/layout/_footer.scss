@@ -4,16 +4,11 @@ footer {
   margin-right: auto;
 }
 
-.footer-list {
+.footer-block {
   padding-top: 60px;
   padding-bottom: 60px;
   display: flex;
   align-items: baseline;
-}
-
-.logo-footer {
-  display: block;
-  margin-bottom: 20px;
 }
 
 .city {
@@ -25,19 +20,23 @@ footer {
   color: #ffffff;
 }
 
-.studio-white {
-  color: #ffffff;
-  font-family: Raleway, sans-serif;
-  text-decoration: none;
-}
-
 .footer-link-mail {
   display: block;
   margin-bottom: 9px;
+
+  &:hover,
+  &:focus {
+    color: var(--accent-color);
+  }
 }
 
 .footer-link-tel {
   display: block;
+
+  &:hover,
+  &:focus {
+    color: var(--accent-color);
+  }
 }
 
 .footer-link-mail,
@@ -50,25 +49,15 @@ footer {
   color: rgba(255, 255, 255, 0.6);
 }
 
-.footer-link-mail:hover,
-.footer-link-mail:focus {
-  color: var(--accent-color);
-}
-
-.footer-link-tel:hover,
-.footer-link-tel:focus {
-  color: var(--accent-color);
-}
-
-.contacts-footer {
+.footer-block__contacts {
   margin-right: 70px;
 }
 
-.join-footer {
+.footer-join {
   margin-right: 93px;
 }
 
-.join-section-title {
+.footer-join__title {
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
@@ -76,33 +65,6 @@ footer {
   text-transform: uppercase;
   color: #ffffff;
   margin-bottom: 20px;
-}
-
-.social-list-footer {
-  display: flex;
-}
-
-.social-icons-footer {
-  display: block;
-  text-align: center;
-  width: 44px;
-  height: 44px;
-  padding: 12px;
-  color: var(--white-text-color);
-  cursor: pointer;
-  background-color: rgba(255, 255, 255, 0.1);
-  border-radius: 50%;
-  margin-right: 10px;
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.social-icon-footer {
-  fill: var(--white-text-color);
-}
-
-.social-icons-footer:hover,
-.social-icons-footer:focus {
-  background-color: var(--accent-color);
 }
 
 .form-footer {
@@ -134,25 +96,7 @@ footer {
   color: rgba(255, 255, 255, 0.6);
 }
 
-.button-subscribe {
-  display: flex;
-  text-align: center;
-  align-items: center;
-  padding: 10px 28px 10px 29px;
-  border: none;
-  border-radius: 4px;
-  font-size: 16px;
-  font-family: inherit;
-  font-weight: 700;
-  line-height: 1.88;
-  letter-spacing: 0.06em;
-  text-decoration: none;
-  cursor: pointer;
-  color: #ffffff;
-  background-color: #2196f3;
-}
-
-.subscribe-icon {
+.form-footer__icon {
   fill: var(--white-text-color);
   margin-left: 10px;
 }

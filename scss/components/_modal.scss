@@ -22,7 +22,7 @@
     opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.close-modal-icon {
+.modal-button {
   outline: none;
   display: flex;
   position: absolute;
@@ -37,14 +37,14 @@
   background-color: #ffffff;
   border: 1px solid rgba(0, 0, 0, 0.1);
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:hover,
+  &:focus {
+    fill: var(--accent-color);
+  }
 }
 
-.close-modal-icon:hover,
-.close-modal-icon:focus {
-  fill: var(--accent-color);
-}
-
-.modal-title {
+.form-title {
   font-weight: 700;
   font-size: 20px;
   line-height: 1.15;

@@ -35,24 +35,24 @@
   padding-bottom: 12px;
   padding-left: 42px;
   transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:hover,
+  &:focus {
+    border: 1px solid var(--accent-color);
+  }
 }
 
-.form-field input:hover,
-.form-field input:focus {
-  border: 1px solid var(--accent-color);
-}
-
-.form-modal-icon {
+.form-icon {
   position: absolute;
   top: 50%;
   margin-left: 12px;
   fill: var(--primary-text-color);
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
 
-.form-field input:hover + .form-modal-icon,
-.form-field input:focus + .form-modal-icon {
-  fill: var(--accent-color);
+  .form-field input:hover + &,
+  .form-field input:focus + & {
+    fill: var(--accent-color);
+  }
 }
 
 .textarea-field {

@@ -1,17 +1,17 @@
-.cards {
+.cards__list {
   display: flex;
   z-index: 0;
 }
 
-.cards-section {
+.cards {
   padding-top: 0;
 }
 
-.cards .item:not(:last-child) {
+.cards__item:not(:last-child) {
   margin-right: 30px;
 }
 
-.cards-titles {
+.cards__title__block {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -22,7 +22,7 @@
   bottom: 0;
 }
 
-.card-title {
+.cards__title__text {
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
@@ -31,6 +31,6 @@
   color: var(--white-text-color);
 }
 
-.cards-block {
+.cards__block {
   position: relative;
 }
